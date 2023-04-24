@@ -1,0 +1,127 @@
+
+
+.container-all{
+    /* 排版為左右邊 */
+    display: flex;
+/* 撐開到滿版 */
+    align-items: stretch;
+}
+
+/* 左邊的側邊欄設定：顏色、寬、高 */
+#sidebar{
+    width: 250px;
+    min-height: 2000px;
+    background-color: #3c6a36;
+    color:white;
+    transition: 1s;
+}
+
+/* 當按下按鈕sidebar的class會加上active 得到這邊的效果 */
+#sidebar.active {
+    margin-left: -200px;
+}
+
+/* 右邊主體 */
+.container-right{
+    background-color:#F8F9FA;
+    width: 100%;
+    min-height: 2000px;
+    border: 1px solid #aaaaaa;
+    padding: 15px;
+    margin-left: 15px;
+}
+/* 按鈕 */
+.container-left .collapse-btn{
+position: relative;
+top: 1%;
+left:207px;
+background-color: #3c6a36;
+color:white;
+border: none;
+font-size: 30px;
+padding: 5px;
+}
+
+.fa-shake{
+    --fa-animation-iteration-count: 1;
+}
+
+/* 按鈕當滑鼠移過去時：背景顏色 */
+.container-left .collapse-btn:hover{
+    background-color:#A4C964;
+    transition: 0.4s;
+}
+
+.container-left li .fa-solid {
+    text-align:center;
+    display: block;
+    position: absolute;
+    font-size: 20px;
+    top: 15px;
+    left: 200px;
+    width: 50px;
+    height: 50px;
+    /* float: right; */
+}
+
+
+/* 左側的標題 */
+#sidebar p{
+    text-align:center;
+    font-size:30px;
+    line-height: 20px;
+    font-style:normal;
+    /* 日文字型：點陣字體 */
+    font-family: 'DotGothic16', sans-serif;
+    /* 中文字型：思源黑體 */
+    /* font-family: 'Noto Sans TC', sans-serif; */
+    /* font-weight: 500 */
+}
+/* 左側的文字 */
+#sidebar ul li a {
+    padding: 10px;
+    font-size: 20px;
+    display: block;
+    /* 不要底線 */
+    text-decoration: none;
+    color: white;
+    position: relative;
+    /* 日文字型：點陣字體 */
+    font-family: 'DotGothic16', sans-serif;
+    font-weight: 400;
+}
+
+#sidebar ul li a:hover {
+    color: #A4C964;
+    background: #F8F9FA;
+}
+
+/* 下拉式選單裡面 */
+ul ul li a{
+    background-color: #A4C964;
+
+}
+
+@media (max-width:600px) {
+    #sidebar {
+        margin-left: -200px;
+    }
+   /* #sidebar ul li a {
+        font-size: 15px;        
+    } */
+    /* .container-left li .fa-solid {
+        position: relative;
+        font-size: 20px;
+        top: 10px;
+        left: 100px;
+        width: 30px;
+        height: 20px;
+    } */
+    #sidebar.active {
+        margin-left: 0px;
+    }
+    /* #sidebar ul p {
+        font-size: 18px;
+        text-align: left;
+    }  */
+}
