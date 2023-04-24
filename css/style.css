@@ -104,24 +104,60 @@ ul ul li a{
 
 @media (max-width:600px) {
     #sidebar {
-        margin-left: -200px;
+        width: 200px;
+        margin-left: -150px;
     }
-   /* #sidebar ul li a {
-        font-size: 15px;        
-    } */
-    /* .container-left li .fa-solid {
-        position: relative;
-        font-size: 20px;
-        top: 10px;
-        left: 100px;
-        width: 30px;
-        height: 20px;
-    } */
     #sidebar.active {
         margin-left: 0px;
     }
-    /* #sidebar ul p {
-        font-size: 18px;
-        text-align: left;
-    }  */
+    /* 按鈕 */
+.container-left .collapse-btn{
+    position: relative;
+    top: 1%;
+    margin-left: -50px;
+    /* background-color: #3c6a36; */
+    color:white;
+    border: none;
+    font-size: 30px;
+    padding: 5px;
+    transition: 1s;
+    }
+    /* 左側的標題 */
+#sidebar p{
+    text-align:center;
+    font-size:24px;
+    line-height: 16px;
+    font-style:normal;
+    /* 日文字型：點陣字體 */
+    font-family: 'DotGothic16', sans-serif;
+    /* 中文字型：思源黑體 */
+    /* font-family: 'Noto Sans TC', sans-serif; */
+    /* font-weight: 500 */
+}
+
+   #sidebar ul li a {
+    padding: 5px;
+    font-size: 16px;
+    display: block;
+    /* 不要底線 */
+    text-decoration: none;
+    color: white;
+    position: relative;
+    /* 日文字型：點陣字體 */
+    font-family: 'DotGothic16', sans-serif;
+    font-weight: 400;
+     
+    }
+    .container-left li .fa-solid {
+        text-align:center;
+        display: block;
+        position: absolute;
+        font-size: 16px;
+        top: 10px;
+        left: 150px;
+        width: 50px;
+        height: 50px;
+        /* float: right; */
+    }
+
 }
